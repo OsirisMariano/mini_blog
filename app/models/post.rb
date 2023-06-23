@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
-  validates :title, :description presence: true
-  validates :title, length: {minimum: 50}
+  validates :title, :description, presence: true
+  validates :title, length: {minimum: 05}
   validates :description, length: {maximum: 240}
 
   before_save do
